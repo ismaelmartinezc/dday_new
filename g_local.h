@@ -815,6 +815,7 @@ void Cmd_Airstrike_f(edict_t* ent);
 //
 
 void Cmd_Reload_f(edict_t* ent);
+void Cmd_MapVote_f(edict_t* ent);
 void Cmd_Help_f(edict_t* ent);
 
 void Cmd_Score_f(edict_t* ent);

@@ -1342,7 +1342,7 @@ void MapVote(edict_t* ent)
 	for (i = 0; i < 4; i++)
 	{
 		//check for bot support
-		//gi.dprintf ("x%s\n",mapstring);
+		// gi.dprintf ("x%s\n",mapstring);
 		if (bots->value)
 		{
 			sprintf(filename, "dday/navigation/%s.cmp", votemaps[i]);

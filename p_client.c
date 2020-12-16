@@ -3375,7 +3375,6 @@ void ClientThink(edict_t* ent, usercmd_t* ucmd)
 				level.exitintermission = true;
 			return;
 		}*/
-
 	if (level.intermissiontime)
 	{
 		client->ps.pmove.pm_type = PM_FREEZE;

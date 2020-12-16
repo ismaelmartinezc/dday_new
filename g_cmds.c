@@ -236,8 +236,8 @@ g_cmds_t id_GameCmds[NUM_ID_CMDS] = // remember to set back to NUM_ID_COMDS
 	"spot", 1, Cmd_Spot,//for mappers to find coordinates for map entities
 	"removedoors", 1, Cmd_RemoveDoors,
 	"showlinks", 1, ShowLinks,
-	"removenode", 1, SV_Remove_Node,
-    "vote", 1, MapVote
+	"removenode", 1, SV_Remove_Node
+    // "vote", 1, Cmd_MapVote_f
 };
 
 // MENUS
@@ -2990,6 +2990,12 @@ qboolean Cmd_Reload(edict_t* ent)
 		safe_cprintf(ent, PRINT_HIGH, "You're out of ammo!\n");
 	}
 	return true;
+}
+
+void Cmd_MapVote_f(edict_t* ent)
+{
+    gi.dprintf ("Entrando a votar...\n");
+    MapVote(ent);
 }
 
 void Cmd_Reload_f(edict_t* ent)
